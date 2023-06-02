@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+:root {
+    --main-color: #EA7F42;
+    --text-color: #767676;
+}
+
+/* 공통 스크린 화면 */
+.screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 390px;
+    height: 844px;
+    background-color: #fff;
+}
+
+/* 로그인 혹은 회원가입 화면 */
+.login {
+    background-color: var(--main-color);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+img.symbol-logo {
+    margin: auto;
+    width: 144px;
+    height: 144px;
+}
+
+/* 로그인 계정 */
+
+.login-account-container {
+    padding-top: 50px;
+    width: 390px;
+    height: 330px;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+}
+
+ul.login-account {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.login-account li button {
+    padding: 13px 87px 13px 87px;
+    width: 322px;
+    height: 44px;
+    border-radius: 44px;
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+.kakao-account {
+    background-image: url(./img/message-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 17px center;
+    border: 1px solid #F2C94C;
+}
+
+.google-account {
+    background-image: url(./img/google-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 17px center;
+    border: 1px solid #767676;
+}
+
+.facebook-account {
+    background-image: url(./img/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: 17px center;
+    border: 1px solid #2D9CDB;
+}
+
+.login-signin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-signin button {
+    background-color: #fff;
+    border: none;
+    color: var(--text-color);
+}
+
+.login-email::after {
+    content: "|";
+    margin: 0 10px;
+    color: var(--text-color);
+}
