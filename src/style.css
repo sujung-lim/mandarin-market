@@ -8,6 +8,11 @@ body {
     background-color: goldenrod;
 }
 
+button {
+    border: none;
+    background: none;
+}
+
 :root {
     --main-color: #EA7F42;
     --text-color: #767676;
@@ -104,4 +109,100 @@ ul.login-account {
     content: "|";
     margin: 0 10px;
     color: var(--text-color);
+}
+
+/* 마이 프로필 화면  */
+section.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+    /* top-basic-nav */
+.top-basic-nav {
+    width: 100%;
+    height: 48px;
+}
+
+.top-basic-nav-li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous-btn {
+    background-image: url(./img/icon-arrow-left.svg);
+    width: 22px;
+    height: 22px;
+}
+
+.more-btn {
+    background-image: url(./img/icon-\ more-vertical.svg);
+    width: 24px;
+    height: 24px;
+}
+
+    /* 프로필 */
+.profile-container {
+    height: 362px;
+    width: 100%;
+}
+    /* 프로필 header */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 41px;
+}
+
+.followers, .followings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* 프로필 main */
+.profile-main {
+    text-align: center;
+}
+
+    /* 프로필 footer */
+.profile-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-footer button {
+    border: 1px solid #dbdbdb;
+    border-radius: 30px;
+}
+
+.message-btn, .share-btn {
+    width: 34px;
+    height: 34px;
+}
+
+.message-btn {
+    background: url(./img/icon-message-circle.svg) no-repeat;
+}
+
+.unfollow-btn {
+    padding: 8px 34px 8px 34px;
+}
+
+.share-btn {
+    background: url(./img/icon-share.svg) no-repeat;
+}
+
+    /* article - 홈 포스트 화면 */
+article {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 422px;
+}
+
+.tab-menu {
+    height: 60px;
+    
 }

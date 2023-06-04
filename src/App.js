@@ -4,7 +4,7 @@ import "./style.css";
 function App() {
   return (
     <div className="app">
-      <div className="splash screen-container">
+      <section className="splash screen-container">
         <div className="logo-container">
           <img
             className="full-logo"
@@ -12,9 +12,9 @@ function App() {
             alt="감귤마켓 심볼과 텍스트"
           />
         </div>
-      </div>
+      </section>
 
-      <div className="login screen-container">
+      <section className="login screen-container">
         <div className="login-container">
           <img
             className="symbol-logo"
@@ -43,7 +43,43 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="profile screen-container">
+        <nav className="top-basic-nav">
+          <ul className="top-basic-nav-li">
+            <li><button className="previous-btn"></button></li>
+            <li><button className="more-btn"></button></li>
+          </ul>
+        </nav>
+        <div className="profile-container">
+          <div className="profile-header">
+            <div className="followers">
+              <span>2950</span>
+              <span>followers</span>
+            </div>
+            <img src={require("./img/basic-profile-img.svg").default} alt="프로필 사진" />
+            <div className="followings">
+              <span>128</span>
+              <span>followings</span>
+          </div>
+          </div> 
+          <div className="profile-main">
+            <p>애월읍 위니브 감귤농장</p>
+            <p>@ weniv_Mandarin</p>
+            <p>애월읍 감귤 전국 배송, 귤따기 체험, 감귤 농장</p>
+          </div>
+          <div className="profile-footer">
+            <button className="message-btn"></button>
+            <button className="unfollow-btn">언팔로우 </button>
+            <button className="share-btn"></button>
+          </div>
+          </div>
+        <article>
+
+        </article>
+        <nav className="tab-menu"></nav>
+      </section>
     </div>
   );
 }
