@@ -178,12 +178,12 @@ section.profile {
     border-radius: 30px;
 }
 
-.message-btn, .share-btn {
+.dm-btn, .share-btn {
     width: 34px;
     height: 34px;
 }
 
-.message-btn {
+.dm-btn {
     background: url(./img/icon-message-circle.svg) no-repeat;
 }
 
@@ -205,4 +205,41 @@ article {
 .tab-menu {
     height: 60px;
     
+}
+
+    /* tab-menu 아래 바  */
+ul.tab-menu-list {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+}
+
+.tab-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 60px;
+}
+
+.tab-menu-container button {
+    width: 24px;
+    height: 24px;
+}
+
+.tab-home-fill-btn {
+    background: url(./img/icon-home-fill.svg) no-repeat;
+}
+
+.tab-message-btn {
+    background: url(./img/icon-message-circle.svg) no-repeat;
+}
+
+.tab-post-btn {
+    background: url(./img/icon-edit.svg) no-repeat;
+}
+
+.tab-user-btn {
+    background: url(./img/icon-user.svg) no-repeat;
 }
